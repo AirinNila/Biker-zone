@@ -1,196 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biker Zone</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biker Zone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-    <!-- tailwind -->
+  <!-- tailwind -->
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- tailwind custom slasses -->
+  <!-- tailwind custom slasses -->
 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'custom-btn': '#E76F51',
-                'banner-bg': '#da373d1a',
-              }
-            }
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'custom-btn': '#E76F51',
+            'banner-bg': '#da373d1a',
+            'des': '#6C6C6C',
           }
         }
-      </script>
-    <style>
-        .font-poppins {
-            font-family: "Poppins", serif;
-        }
+      }
+    }
+  </script>
+  <style>
+    .font-poppins {
+      font-family: "Poppins", serif;
+    }
 
-        /* share style */
-    </style>
+    /* share style */
+  </style>
 </head>
-<body class="font-poppins">
-    <header class="md:container md:mx-auto">
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="flex-1">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm text-base dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52  shadow">
-                      <li><a>Home</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>News</a></li>
-                      <li><a>contact</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost pl-0 text-4xl">Biker Zone</a>
-                </div>
-                <div class="navbar-end hidden lg:flex">
-                  <ul class="menu menu-horizontal text-base px-1">
-                    <li><a>Home</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>News</a></li>
-                    <li><a>contact</a></li>
-                   
-                  </ul>
-                </div>
-                <div class="">
-                  <a class="btn bg-custom-btn px-8 text-white">Login</a>
-                </div>
-              </div>
-        </nav>
 
-        <!-- banner section -->
-        <div class="carousel w-full">
-          <div id="item1" class="carousel-item w-full">
-            <!-- banner-1 -->
-         <section class="mt-12 w-full">
+<body class="font-poppins">
+  <header class="md:container md:mx-auto">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm text-base dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52  shadow">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost pl-0 text-4xl">Biker Zone</a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <ul class="menu menu-horizontal text-base px-1">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>News</a></li>
+            <li><a>contact</a></li>
+
+          </ul>
+        </div>
+        <div class="">
+          <a class="btn bg-custom-btn px-8 text-white">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner section -->
+    <div class="carousel w-full">
+      <div id="item1" class="carousel-item w-full">
+        <!-- banner-1 -->
+        <section class="mt-12 w-full">
           <div class="flex flex-col md:flex-row  bg-banner-bg rounded-sm lg:p-16 gap-6 p-8">
             <div class="space-y-6">
               <h3 class="text-6xl font-bold ">Ride-on R15 V4 with Smile</h3>
               <p class="text-base">Amet minim mollit non deserunt ullamco <br>
                 est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                <div class="">
-                  <a class="btn bg-custom-btn px-8 text-base text-white">Parchase</a>
-                </div>
+              <div class="">
+                <a class="btn bg-custom-btn px-8 text-base text-white">Parchase</a>
+              </div>
             </div>
 
             <div>
               <img src="/images/slider/bike1.png" alt="" class="md:max-w-96 max-w-72">
             </div>
           </div>
-         </section>
-          </div>
-          <!-- item2 -->
-          <div id="item2" class="carousel-item w-full">
-             <!-- banner-2 -->
-         <section class="mt-12">
+        </section>
+      </div>
+      <!-- item2 -->
+      <div id="item2" class="carousel-item w-full">
+        <!-- banner-2 -->
+        <section class="mt-12">
           <div class="flex flex-col md:flex-row  bg-banner-bg rounded-sm lg:p-16 gap-6 p-8">
             <div class="space-y-6">
               <h3 class="text-6xl font-bold ">Ride-on R15 V4 with Smile</h3>
               <p class="text-base">Amet minim mollit non deserunt ullamco <br>
                 est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                <div class="">
-                  <a class="btn bg-custom-btn px-8 text-base text-white">Parchase</a>
-                </div>
+              <div class="">
+                <a class="btn bg-custom-btn px-8 text-base text-white">Parchase</a>
+              </div>
             </div>
 
             <div>
               <img src="/images/slider/bike2.png" alt="" class="md:max-w-96 max-w-72">
             </div>
           </div>
-         </section>
-          </div>
-          <!-- item3 -->
-          <div id="item3" class="carousel-item w-full">
-             <!-- banner-3 -->
-         <section class="mt-12">
+        </section>
+      </div>
+      <!-- item3 -->
+      <div id="item3" class="carousel-item w-full">
+        <!-- banner-3 -->
+        <section class="mt-12">
           <div class="flex flex-col md:flex-row  bg-banner-bg rounded-sm lg:p-16 gap-6 p-8">
             <div class="space-y-6">
               <h3 class="text-6xl font-bold ">Ride-on R15 V4 with Smile</h3>
               <p class="text-base">Amet minim mollit non deserunt ullamco <br>
                 est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                <div class="">
-                  <a class="btn bg-custom-btn px-8 text-base text-white">Parchase</a>
-                </div>
+              <div class="">
+                <a class="btn bg-custom-btn px-8 text-base text-white">Parchase</a>
+              </div>
             </div>
 
             <div>
               <img src="/images/slider/bike3.png" alt="" class="md:max-w-96 max-w-72">
             </div>
           </div>
-         </section>
-          </div>
-          <!-- item4 -->
-          <div id="item4" class="carousel-item w-full">
-             <!-- banner-4 -->
-         <section class="mt-12">
+        </section>
+      </div>
+      <!-- item4 -->
+      <div id="item4" class="carousel-item w-full">
+        <!-- banner-4 -->
+        <section class="mt-12">
           <div class="flex flex-col md:flex-row  bg-banner-bg rounded-sm lg:p-16 gap-6 p-8">
             <div class="space-y-6">
               <h3 class="text-6xl font-bold ">Ride-on R15 V4 with Smile</h3>
               <p class="text-base">Amet minim mollit non deserunt ullamco <br>
                 est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                <div class="">
-                  <a class="btn bg-custom-btn px-8 text-base text-white">Parchase</a>
-                </div>
+              <div class="">
+                <a class="btn bg-custom-btn px-8 text-base text-white">Parchase</a>
+              </div>
             </div>
 
             <div>
               <img src="/images/slider/bike4.png" alt="" class="md:max-w-96 max-w-72">
             </div>
           </div>
-         </section>
+        </section>
+      </div>
+    </div>
+    <div class="flex w-full justify-center gap-2 py-2">
+      <a href="#item1" class="btn btn-xs">1</a>
+      <a href="#item2" class="btn btn-xs">2</a>
+      <a href="#item3" class="btn btn-xs">3</a>
+      <a href="#item4" class="btn btn-xs">4</a>
+    </div>
+
+  </header>
+
+  <main class="md:container md:mx-auto">
+    <!-- feature section -->
+    <section class="mt-20">
+      <div class="flex flex-col items-center text-center gap-2">
+        <h2 class="text-5xl font-bold">Fetured Bikes In This Year</h2>
+        <p class="text-[#E76F51] font-semibold">Best <span class="border-b-2 border-[#E76F51]">bike colle</span>ction
+        </p>
+      </div>
+      <div class="py-14 grid grid-cols-1 md:grid-cols-2 gap-12 lg:grid-cols-3">
+        <div><img src="/images/others/feature-bike.png" alt="bike"></div>
+        <div><img src="/images/others/feature-bike.png" alt="bike"></div>
+        <div><img src="/images/others/feature-bike.png" alt="bike"></div>
+      </div>
+    </section>
+
+    <!-- letest news -->
+
+    <section class="mt-20">
+      <div>
+        <h2 class="text-5xl font-bold text-center pb-20">latest News</h2>
+      </div>
+      <!-- card container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- card1 -->
+        <div className="card card-compact bg-base-100 "
+          class="w-full border-gray-600 p-4 rounded-lg  flex flex-col shadow-md gap-6">
+          <figure>
+            <img src="/images/others/latest1.png" alt="Shoes" />
+          </figure>
+          <div className="card-body" class="space-y-4">
+            <h2 className="card-title" class="text-2xl font-semibold text-[#18191F]">Ducati XDIAVEL S-73</h2>
+            <p class="text-base text-des ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum
+              amet faucibus sed id nisi lectus at.</p>
+            <div className="card-actions justify-start">
+
+              <a class="btn bg-white border-2 border-custom-btn px-8 text-custom-btn">Login</a>
+
+            </div>
           </div>
         </div>
-        <div class="flex w-full justify-center gap-2 py-2">
-          <a href="#item1" class="btn btn-xs">1</a>
-          <a href="#item2" class="btn btn-xs">2</a>
-          <a href="#item3" class="btn btn-xs">3</a>
-          <a href="#item4" class="btn btn-xs">4</a>
+        <!-- card2 -->
+        <div className="card card-compact bg-base-100 "
+        class="w-full border-gray-600 p-4 rounded-lg shadow-md flex flex-col gap-6">
+        <figure>
+          <img src="/images/others/latest2.png" alt="Shoes" />
+        </figure>
+        <div className="card-body" class="space-y-4">
+          <h2 className="card-title" class="text-2xl font-semibold text-[#18191F]">Ducati XDIAVEL S-73</h2>
+          <p class="text-base text-des ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum
+            amet faucibus sed id nisi lectus at.</p>
+          <div className="card-actions justify-start">
+
+            <a class="btn bg-white border-2 border-custom-btn px-8 text-custom-btn">Login</a>
+
+          </div>
         </div>
-        
-    </header>
+      </div>
+        <!-- card3 -->
+        <div className="card card-compact bg-base-100 "
+        class="w-full border-gray-600 p-4 rounded-lg shadow-md flex flex-col gap-6">
+        <figure>
+          <img src="/images/others/latest3.png" alt="Shoes" />
+        </figure>
+        <div className="card-body" class="space-y-4">
+          <h2 className="card-title" class="text-2xl font-semibold text-[#18191F]">Ducati XDIAVEL S-73</h2>
+          <p class="text-base text-des ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum
+            amet faucibus sed id nisi lectus at.</p>
+          <div className="card-actions justify-start">
 
-    <main class="md:container md:mx-auto">
-      <!-- feature section -->
-      <section class="mt-20">
-        <div class="flex flex-col items-center text-center gap-2">
-          <h2 class="text-5xl font-bold">Fetured Bikes In This Year</h2>
-          <p class="text-[#E76F51] font-semibold">Best <span class="border-b-2 border-[#E76F51]">bike colle</span>ction</p>
+            <a class="btn bg-white border-2 border-custom-btn px-8 text-custom-btn">Login</a>
+
+          </div>
         </div>
-        <div class="py-14 grid grid-cols-1 md:grid-cols-2 gap-12 lg:grid-cols-3">
-          <div><img src="/images/others/feature-bike.png" alt="bike"></div>
-          <div><img src="/images/others/feature-bike.png" alt="bike"></div>
-          <div><img src="/images/others/feature-bike.png" alt="bike"></div>
-        </div>
-      </section>
+      </div>
 
-    </main>
+      </div>
+    </section>
 
-    <footer>
+  </main>
 
-    </footer>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
